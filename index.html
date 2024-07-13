@@ -9,7 +9,14 @@
     </style>
     <body>
       <nav class="navbar">
-          <ul>
+        <ul class="sidebar">
+          <li onclick="hidesidebar()" viewBox="0 96 960 960"><a href="#"><img src="resources/arfwd.svg"></a></li>
+            <li><a href="#">MAIL</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            </ul>
+            <ul>
             <li><img src="resources/placeholder.png" height="50px"></li>
               <li><a href="#">MAIL</a></li>
               <li><a href="#">ABOUT</a></li>
@@ -24,5 +31,15 @@
         <br>
         <br>
       </div>
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
   </body>
   </html>
