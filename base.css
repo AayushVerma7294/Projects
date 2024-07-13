@@ -59,4 +59,8 @@ li:first-child {
     border-radius: 8px;
     background-color: rgba(6, 165, 139, 0.514)
 }
+.child-div
+{
+    border-radius: 10px;
+}
 
