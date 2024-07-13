@@ -59,9 +59,6 @@ li:first-child {
     align-items: center;
     padding: 0px 0px;
   }
-<<<<<<< HEAD
-  
-=======
   .sidebar{
     position: fixed;
     top: 0; 
@@ -77,7 +74,6 @@ li:first-child {
     align-items: flex-start;
     justify-content: flex-start;
   }
->>>>>>> 35a0085f077aebd860ba6c5bdde906777b21c0fa
   .sidebar li{
     width: 100%;
   }
