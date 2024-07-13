@@ -59,7 +59,25 @@ li:first-child {
     align-items: center;
     padding: 0px 0px;
   }
+<<<<<<< HEAD
   
+=======
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: ;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+>>>>>>> 35a0085f077aebd860ba6c5bdde906777b21c0fa
   .sidebar li{
     width: 100%;
   }
@@ -69,6 +87,7 @@ li:first-child {
   .menu-button{
     display: none;
   }
+<<<<<<< HEAD
   @media(max-width: 800px){
     .hideOnMobile{
       display: none;
@@ -82,3 +101,5 @@ li:first-child {
       width: 100%;
     }
   }
+=======
+>>>>>>> 35a0085f077aebd860ba6c5bdde906777b21c0fa
