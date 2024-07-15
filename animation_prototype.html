@@ -1,0 +1,60 @@
+<html>
+    <style>
+        .outer{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+.element:hover{ 
+    animation-play-state: running;
+}
+        .element
+        {
+            border:3px solid black;
+            height: 200px;
+            width:200px;
+            background-color: cyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation-duration: 3s;
+            animation-name: spin;
+            font-weight: 700;
+            font-size: 36;
+            margin-top: 10%;
+            margin-right:10%;
+            animation-fill-mode: forwards;
+            animation-direction:normal;
+            animation-play-state: paused;
+        }
+
+@keyframes spin{
+    
+        0%{background-color:rgba(0, 0, 0, 1) ;}
+        10%{background-color:rgba(75, 0, 130, 1) ;}
+        20%{background-color:rgba(0, 0, 255, 1);}
+        30%{ background-color:rgba(0, 255, 255, 1) ;}
+        40%{ background-color:rgba(0, 255, 0, 1) ;}
+        50%{background-color:rgba(255, 255, 0, 1) ; scale: 1.5;}
+        60%{background-color:rgba(255, 165, 0, 1);}
+        70%{ background-color:rgba(255, 0, 0, 1) ;}
+        80%{ background-color:rgba(128, 0, 0, 1) ;}
+        90%{background-color:rgba(75, 0, 130, 1) ;}
+        100%{background-color:rgba(255, 255, 255, 1) ;
+transform: rotate(360deg);
+border-radius: 50%;
+
+        }
+    }
+    </style>
+    <body>
+        <h1>Hover that box over there!</h1>
+        <div class="outer">
+            
+            <div class="element">
+                Vortex Inc.
+            </div>
+        </div>
+    </body>
+</html>
