@@ -28,6 +28,17 @@ body{
     border-radius: 15px;
     backdrop-filter:blur(10px);
     box-shadow: 20px 10px 10px rgba(59, 59, 59, 0.336);
+    animation-name:zoom;
+    animation-duration: 3s;
+}
+@keyframes zoom{
+    0%{
+        scale:0.1;
+    
+    }
+    100%{
+        scale:1;
+    }
 }
 h1,h4,h6{
     text-align: center;
