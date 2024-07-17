@@ -1,0 +1,79 @@
+<html>
+            <!--This is for my learning puposes-->
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .outer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .element {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        background-color: cyan;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 1s ease;
+        z-in
+    }
+
+    .element:hover {
+        transform: translate(-200%, -50%);
+    }
+
+
+@keyframes spin{
+    
+        0%{background-color:rgba(0, 0, 0, 1) ;}
+        10%{background-color:rgba(75, 0, 130, 1) ;}
+        20%{background-color:rgba(0, 0, 255, 1);}
+        30%{ background-color:rgba(0, 255, 255, 1) ;}
+        40%{ background-color:rgba(0, 255, 0, 1) ;}
+        50%{background-color:rgba(255, 255, 0, 1) ; scale: 1.5;}
+        60%{background-color:rgba(255, 165, 0, 1);}
+        70%{ background-color:rgba(255, 0, 0, 1) ;}
+        80%{ background-color:rgba(128, 0, 0, 1) ;}
+        90%{background-color:rgba(75, 0, 130, 1) ;}
+        100%{background-color:rgba(255, 255, 255, 1);
+transform: rotate(360deg);
+border-radius: 50%;
+
+        }
+    }
+    </style>
+    <body>
+        <h1>Hover that box over there!</h1>
+        <div class="outer">
+            
+            <div class="element">
+                Vortex Inc.
+            </div>
+        </div>
+    </body>
+</html>
+
