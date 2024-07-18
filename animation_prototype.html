@@ -1,20 +1,53 @@
 <html>
     <style>
-        .outer{
-            text-align: center;
-            justify-content: center;
+        .outermost{
             display: flex;
+            background-color: white;
+            width:800px;
+            margin: auto;
+            margin-bottom: 10px;
         }
-.element:hover{ 
-    animation-play-state: running;
-}
-        .element
+        .text{
+            z-index: 0;
+            text-align:start;
+            justify-content: center;
+            display: inline-flex;
+            background-color: rgb(255, 255, 255);
+            height:auto;
+            margin:1%;
+            width:auto;
+            padding: 20px 20px;
+            animation-name:move-right;
+            animation-fill-mode: forwards;
+            transform: translate(-100%);
+            animation-delay:3s;
+            animation-duration:0.5s;
+            background-color: rgba(255, 255, 255, 0);
+            color:white;
+
+        }
+        .anim:hover + .text{
+            transition: ease 2s;
+            animation-duration: 2s;
+            transform:translate(10px);
+            color:black
+        }
+        .circle:hover + .text{
+            transition: ease 2s;
+            animation-duration: 2s;
+            transform:translate(10px);
+            color: black;
+        }
+
+        .anim
         {
+            z-index: 999;
             border:3px solid black;
             height: 200px;
-            width:200px;
+            width:360px;
+            box-shadow: 10px 30px 10px inset black 0 10px 30px inset grey;
             background-color: cyan;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -22,11 +55,28 @@
             animation-name: spin;
             font-weight: 700;
             font-size: 36;
-            margin-top: 10%;
-            margin-right:10%;
+            margin-top: 0%;
+            margin-right:5%;
             animation-fill-mode: forwards;
             animation-direction:normal;
-            animation-play-state: paused;
+        }
+        .circle
+        {
+            z-index: 999;
+            border:3px solid black;
+            height: 200px;
+            width:360px;
+            box-shadow: 10px 30px 10px inset black 0 10px 30px inset grey;
+            background-color: cyan;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 700;
+            font-size: 36;
+            margin-top: 0%;
+            margin-right:5%;
+            border-radius: 50%;
         }
 
 @keyframes spin{
@@ -46,15 +96,49 @@ transform: rotate(360deg);
 border-radius: 50%;
 
         }
+
+
+}
+@keyframes move-right{
+    0%{
+    }
+    50%{}
+    100%{background-color: rgb(255, 255, 255);}
     }
     </style>
     <body>
         <h1>Hover that box over there!</h1>
-        <div class="outer">
-            
-            <div class="element">
-                Vortex Inc.
+        <div class="outermost" id="1">
+        <div class="anim"> 
+            Money 
             </div>
-        </div>
+            <div class="text">
+                <br>
+                <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1>Some people said that money can't buy happiness but the truth is most of things can be brought.</p> 
+        </div></div>
+        <div class="outermost" id="2">
+            <div class="circle"> 
+                Some Other stuff 
+                </div>
+                <div class="text">
+                    <br>
+                    <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>So basically i am adding this text for some unknown reasons and just want to fill the text box up to maximum limit.</p> 
+            </div></div>
+            <div class="outermost">
+                <div class="circle"> 
+                    Thoughts 
+                    </div>
+                    <div class="text">
+                        <br>
+                        <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>Currently i am working on various projects but i decided to keep my mind one thing at a time. So i can keep learning properly, you know i believe this is the best way to learn</p> 
+                </div></div>
+                <div class="outermost">
+                    <div class="circle"> 
+                        Final Thought 
+                        </div>
+                        <div class="text">
+                            <br>
+                            <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>Well I have to say,things may be difficult to learn but i know someone who helping me. and i feel good about it,you know. </p> 
+                    </div></div>
     </body>
 </html>
