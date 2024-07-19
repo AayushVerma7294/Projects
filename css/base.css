@@ -185,3 +185,16 @@ border-radius: 50%;
 
 
 }
+footer {
+  text-align: center;
+  padding: 5px 5px;
+  background-color:rgba(90, 202, 202, 0.562);
+  color: white;
+}
+.div_foot
+{ display:inline-block;
+  margin-top: 10px; 
+  background-color: rgb(16, 101, 228);
+  margin-left: 40px;
+  margin-bottom: 10px; 
+}
