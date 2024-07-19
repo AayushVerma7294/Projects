@@ -7,11 +7,14 @@
             margin: auto;
             margin-bottom: 10px;
         }
+p{
+    font-size:21px;
+}
         .text{
             z-index: 0;
             text-align:start;
             justify-content: center;
-            display: inline-flex;
+            display: relative;
             background-color: rgb(255, 255, 255);
             height:auto;
             margin:1%;
@@ -19,7 +22,7 @@
             padding: 20px 20px;
             animation-name:move-right;
             animation-fill-mode: forwards;
-            transform: translate(-100%);
+            transform: translate(-60%);
             animation-delay:3s;
             animation-duration:0.5s;
             background-color: rgba(255, 255, 255, 0);
@@ -27,36 +30,42 @@
 
         }
         .anim:hover + .text{
-            transition: ease 2s;
+            transition: ease 1s;
             animation-duration: 2s;
             transform:translate(10px);
-            color:black
+            color:black;;
         }
         .circle:hover + .text{
-            transition: ease 2s;
-            animation-duration: 2s;
-            transform:translate(10px);
+            transition: ease 1s;
+            transform:translate(5px);
             color: black;
         }
-
+        .anim:not(:hover)+.text{
+            transition: ease 1s;
+            transform: translate(-30px);
+        }
+        .circle:not(:hover)+.text{
+            transition: ease 1s;
+            transform: translate(-70px);
+        }
         .anim
         {
             z-index: 999;
             border:3px solid black;
             height: 200px;
-            width:360px;
+            width:200px;
+            padding:2% 6.5%;
             box-shadow: 10px 30px 10px inset black 0 10px 30px inset grey;
             background-color: cyan;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: justify;
             animation-duration: 3s;
             animation-name: spin;
             font-weight: 700;
             font-size: 36;
             margin-top: 0%;
-            margin-right:5%;
             animation-fill-mode: forwards;
             animation-direction:normal;
         }
@@ -65,18 +74,19 @@
             z-index: 999;
             border:3px solid black;
             height: 200px;
-            width:360px;
+            width:230px;
             box-shadow: 10px 30px 10px inset black 0 10px 30px inset grey;
             background-color: cyan;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-weight: 700;
+            font-weight: 900;
             font-size: 36;
             margin-top: 0%;
             margin-right:5%;
             border-radius: 50%;
+            padding:2% 6.5%;
         }
 
 @keyframes spin{
@@ -99,15 +109,9 @@ border-radius: 50%;
 
 
 }
-@keyframes move-right{
-    0%{
-    }
-    50%{}
-    100%{background-color: rgb(255, 255, 255);}
-    }
     </style>
     <body>
-        <h1>Hover that box over there!</h1>
+        <h1>Hover that circle over there!</h1>
         <div class="outermost" id="1">
         <div class="anim"> 
             Money 
@@ -122,7 +126,7 @@ border-radius: 50%;
                 </div>
                 <div class="text">
                     <br>
-                    <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>So basically i am adding this text for some unknown reasons and just want to fill the text box up to maximum limit.</p> 
+                    <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1>So basically i am adding this text for some unknown reasons and just want to fill the text box up to maximum limit.</p> 
             </div></div>
             <div class="outermost">
                 <div class="circle"> 
@@ -130,7 +134,7 @@ border-radius: 50%;
                     </div>
                     <div class="text">
                         <br>
-                        <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>Currently i am working on various projects but i decided to keep my mind one thing at a time. So i can keep learning properly, you know i believe this is the best way to learn</p> 
+                        <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1>Currently i am working on various projects but i decided to keep my mind one thing at a time. So i can keep learning properly, you know i believe this is the best way to learn</p> 
                 </div></div>
                 <div class="outermost">
                     <div class="circle"> 
@@ -138,7 +142,7 @@ border-radius: 50%;
                         </div>
                         <div class="text">
                             <br>
-                            <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1><hr>Well I have to say,things may be difficult to learn but i know someone who helping me. and i feel good about it,you know. </p> 
+                            <p><h1>[PLACEHOLDER]&nbsp;&nbsp;&nbsp;</h1>Well I have to say,things may be difficult to learn but i know someone who helping me. and i feel good about it,you know. </p> 
                     </div></div>
     </body>
 </html>
