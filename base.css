@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar {
@@ -56,9 +56,9 @@ li:first-child {
 .navbar li a:hover {
   background-color: rgba(90, 202, 202, 0.562);
   align-items: center;
-  padding: 10px 15px;
+  padding: 12px 15px;
   transition: 0.6s;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: blue;
   height: 100%;
 }
@@ -75,4 +75,113 @@ li:first-child {
   .sidebar {
     width: 100%;
   }
+}
+.outermost{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  width:800px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+p{
+font-size:21px;
+}
+.text{
+  z-index: 0;
+  text-align:start;
+  justify-content: center;
+  display: relative;
+  background-color: rgba(255, 255, 255, 0);
+  height:auto;
+  margin:1%;
+  width:auto;
+  padding: 20px 20px;
+  animation-name:move-right;
+  animation-fill-mode: forwards;
+  transform: translate(-60%);
+  animation-delay:3s;
+  animation-duration:0.5s;
+  background-color: rgba(255, 255, 255, 0);
+  color:rgba(255, 255, 255, 0);
+
+}
+.anim:hover + .text{
+  transition: ease 1s;
+  animation-duration: 2s;
+  transform:translate(10px);
+  color:black;;
+}
+.circle:hover + .text{
+  transition: ease 1s;
+  transform:translate(5px);
+  color: black;
+}
+.anim:not(:hover)+.text{
+  transition: ease 1s;
+  transform: translate(-30px);
+}
+.circle:not(:hover)+.text{
+  transition: ease 1s;
+  transform: translate(-70px);
+}
+.anim
+{
+  z-index: 999;
+  border:3px solid black;
+  height: 200px;
+  width:250px;
+  padding:2% 6.5%;
+  box-shadow: 10px 30px 10px inset black 0 10px 30px inset grey;
+  background-color: rgba(0, 255, 255, 0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  animation-duration: 3s;
+  animation-name: spin;
+  font-weight: 700;
+  font-size: 36;
+  margin-top: 0%;
+  animation-fill-mode: forwards;
+  animation-direction:normal;
+}
+.circle
+{
+  z-index: 999;
+  border:3px solid black;
+  height: 200px;
+  width:220px;
+  backdrop-filter:blur(20px);
+  background-color: rgba(255, 255, 255, 0.377);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align:justify;
+  font-weight: 700;
+  font-size: 32;
+  margin-top: 0%;
+  margin-right:0%;
+  border-radius: 50%;
+  padding:20px 50px;
+}
+
+@keyframes spin{
+
+0%{background-color:rgba(0, 0, 0, 1) ;}
+10%{background-color:rgba(75, 0, 130, 1) ;}
+20%{background-color:rgba(0, 0, 255, 1);}
+30%{ background-color:rgba(0, 255, 255, 1) ;}
+40%{ background-color:rgba(0, 255, 0, 1) ;}
+50%{background-color:rgba(255, 255, 0, 1) ; scale: 1.5;}
+60%{background-color:rgba(255, 166, 0, 0.76);}
+70%{ background-color:rgba(255, 0, 0, 0.486) ;}
+80%{ background-color:rgba(128, 0, 0, 0.295) ;}
+90%{background-color:rgba(76, 0, 130, 0.116) ;}
+100%{background-color:rgba(255, 255, 255, 0.384);
+transform: rotate(360deg);
+border-radius: 50%;
+
+}
+
+
 }

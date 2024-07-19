@@ -29,7 +29,7 @@ body{
     backdrop-filter:blur(10px);
     box-shadow: 20px 10px 10px rgba(59, 59, 59, 0.336);
     animation-name:zoom;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 @keyframes zoom{
     0%{
