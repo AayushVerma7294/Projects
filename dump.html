@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .outermost {
+            display: flex;
+            background-color: rgba(214, 83, 83, 0.986);
+            width: 800px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .circle-right {
+            border: 3px solid black;
+            height: 200px;
+            width: 180px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(216, 26, 26, 0.377);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            font-weight: 700;
+            font-size: 32px; /* Corrected: Added 'px' */
+            margin-top: 0%;
+            margin-left: auto;
+            border-radius: 50%;
+            padding: 20px 50px;
+        }
+        .text-right {
+            text-align: start;
+            display: relative;
+            background-color: rgba(255, 255, 255, 0.945);
+            height: auto;
+            margin: 1%;
+            width: auto;
+            padding: 20px 20px;
+            animation-name: move-right;
+            animation-fill-mode: forwards;
+            transform: translateX(-300px);
+            transition: transform 0.5s ease-in-out;
+            color: rgba(8, 8, 8, 0.911);
+        }
+        .circle-right:hover + .text-right {
+            transform: translateX(-600px);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="outermost">
+        <div class="circle-right">123</div>
+        <div class="text-right">sakldjaslckm</div>
+    </div>
+</body>
+</html>
