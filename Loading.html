@@ -3,11 +3,40 @@
 
     </head>
     <style>
+        .outermost{
+            display:block;
+            margin:0px;
+            height:auto;
+            width:100%;
+            background-color:;
+            
+
+        }
+        .inner{
+            display:flex;
+            background-color: rgb(255, 255, 255);
+            margin-left: 25%;
+            background-color:
+        }
+        .grid
+        {background-color: rgb(255, 255, 255);
+            width:15%;
+            height:120px;
+        display:inline-grid;
+            border: 2px solid rgb(255, 255, 255);
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+    }
+
         img{
+            
+            align-self: center;
             animation-name:show-up;
-            animation-duration: 30s;
+            animation-duration: 1s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
+            scale:1;
         }
 
 @keyframes show-up {
@@ -27,9 +56,61 @@ opacity:0
         opacity:1;
     }
 }
+.circle1{
+    /*box-shadow: 20px 10px 10px inset rgb(0, 0, 0);*/
+/*border: 10px solid #ffffff;
+  border-top: 10px solid #000000;*/ /*open only if you decided to use cicle loading*/
+  border-radius: 50%;
+  width: 32%;
+  height: 120px;
+  margin: 0px;
+ animation: rotate 0.1s linear infinite;
+margin-left:40px;
+}
+    
+    @keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+
+    }
+    50%{
+
+    }
+    75%{
+
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+.circle1:hover{
+    animation-play-state: paused;
+    animation-delay: 5s;
+}
     </style>
     <body>
         <h1><center> PLEASE WAIT THE WEBSITE IS ON THE WAY...</h1>
-        <IMG SRC="resources/sign-in.png"></center>
+            <div class="outermost">
+            <div class="inner">
+                <div class="grid" id="1">[PLACEHOLDER]</div>
+                <div class="grid" id="2">[PLACEHOLDER]</div>
+                <div class="grid" id="3">[PLACEHOLDER]</div>
+                </div>
+                <div class="inner">
+                    <div class="grid" id="4">[PLACEHOLDER]</div>
+                    <div class="grid" id="5"><div class="circle1"><img src="resources/placeholder2.png" height="100%" id="2"></div></div>
+                    <div class="grid" id="6">[PLACEHOLDER]</div>
+                    </div>
+                    <div class="inner">
+                        <div class="grid" id="7">[PLACEHOLDER]</div>
+                        <div class="grid" id="8">[PLACEHOLDER]</div>
+                        <div class="grid" id="9">[PLACEHOLDER]</div>
+                        </div>
+            </div>
+        <IMG SRC="resources/sign-in.png" id="1"></center>
+
     </body>
 </html>
